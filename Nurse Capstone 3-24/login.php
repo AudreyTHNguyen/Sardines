@@ -24,7 +24,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="Home.html">Nurses On The Go</a>
+            <a class="navbar-brand" href="Home.php">Nurses On The Go</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -37,7 +37,9 @@
                         <a class="nav-link" href="menu.php">Nurses</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="login.php">Log In <span class="sr-only">(current)</span> </a>
+                        <?php  if (!isset($_SESSION['username'])) : ?>
+                        <a class="nav-link" href="login.php">Log In
+                            <?php endif ?><span class="sr-only">(current)</span> </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contact.php">Contact</a>
