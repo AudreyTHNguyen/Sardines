@@ -138,7 +138,7 @@
                                 <p class="card-text">Specialty in special needs care</p>
                             </div>
                             <div class="card-footer">
-                                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+                                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9733;</small>
                             </div>
                         </div>
                     </div>
@@ -156,7 +156,7 @@
                                 <p class="card-text">Specialty in pediatrics care</p>
                             </div>
                             <div class="card-footer">
-                                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+                                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9733;</small>
                             </div>
                         </div>
                     </div>
@@ -174,7 +174,7 @@
                                 <p class="card-text">Well rounded patient care</p>
                             </div>
                             <div class="card-footer">
-                                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+                                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9733;</small>
                             </div>
                         </div>
                     </div>
@@ -191,7 +191,7 @@
                                 <p class="card-text">Specialty in elderly care</p>
                             </div>
                             <div class="card-footer">
-                                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+                                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9733;</small>
                             </div>
                         </div>
                     </div>
@@ -206,7 +206,7 @@
                                 <p class="card-text">Specialty in autism care</p>
                             </div>
                             <div class="card-footer">
-                                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+                                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9733;</small>
                             </div>
                         </div>
                     </div>
