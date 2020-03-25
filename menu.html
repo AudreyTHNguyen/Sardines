@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+     <link rel="stylesheet" type="text/css" href="menu.css"> 
+      
+
+
+    <title>Nurses On The Go!</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/full-width-pics.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="Home.html">Nurses On The Go!</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="Home.html">Home
+              
+              </a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="menu.html">Nurses
+                <span class="sr-only">(current)</span></a>
+                
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+      
+      
+      <div class="card">
+  <img src="Nurse2.jpg" alt="John" style="width:100%" height="">
+          <h1>Taylor Sanchez </h1>
+          <p class="title">RN & specialty in special needs care </p>
+  <p>Oakland Universityy</p>
+  <p> Rating: </p>&#9733;&#9733;&#9733;&#9733;
+  <a href="#"><i class="fa fa-dribbble"></i></a>
+  <a href="#"><i class="fa fa-twitter"></i></a>
+  <a href="#"><i class="fa fa-linkedin"></i></a>
+  <a href="#"><i class="fa fa-facebook"></i></a>
+      <form>
+           <button type="submit" formaction="Taylor.html">View</button>
+          </form>
+          
+</div>     
+      <p>
+      
+      
+      </p>
+ 
+      <div class="card">
+  <img src="Nurse1.jpg" alt="John" style="width:100%" height="">
+  <h1>Jamie Curtis</h1>
+  <p class="title">RN & specialty in pedatrics care</p>
+  <p>Oakland Universityy</p>
+  <p>Rating: </p>&#9733;&#9733;&#9733;&#9733;&#9733;
+  <a href="#"><i class="fa fa-dribbble"></i></a>
+  <a href="#"><i class="fa fa-twitter"></i></a>
+  <a href="#"><i class="fa fa-linkedin"></i></a>
+  <a href="#"><i class="fa fa-facebook"></i></a>
+  <p><button>Contact</button></p>
+</div>    
+        <p>
+      
+      
+      </p>
+  
+      <div class="card">
+  <img src="Nurse3.jpg" alt="John" style="width:100%" height="">
+          <h1>Alfred James </h1>
+          <p class="title">RN & specialty in elderly care </p>
+  <p>Oakland Universityy</p>
+  <p>Rating: </p>&#9733;&#9733;&#9733;&#9733;
+  <a href="#"><i class="fa fa-dribbble"></i></a>
+  <a href="#"><i class="fa fa-twitter"></i></a>
+  <a href="#"><i class="fa fa-linkedin"></i></a>
+  <a href="#"><i class="fa fa-facebook"></i></a>
+  <p><button>Contact</button></p>
+</div>     
+      
+      
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+     
+
+  </body>
+
+</html>
