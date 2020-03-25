@@ -102,7 +102,7 @@
                         <div><label for="email">Email</label></div>
                         <input type="text" name="email" placeholder="Your email..">
                         <div><label for="message">Questions? </label></div>
-                        <input type="text" name="message" placeholder="Your text..">
+                        <textarea name="message" cols="40" rows="5" placeholder="Your text.."></textarea>
 
 
                         <div><input type="submit" name="submit" value="Submit"></div>
