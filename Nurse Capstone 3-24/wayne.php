@@ -131,10 +131,10 @@
 
                     <div class="col-lg-4 col-md-6 mb-4">
                         <div class="card h-100">
-                            <a href="#"><img class="card-img-top" src="Nurse1.jpg" alt=""></a>
+                            <a href="Nurse1.php"><img class="card-img-top" src="Nurse1.jpg" alt=""></a>
                             <div class="card-body">
                                 <h4 class="card-title">
-                                    <a href="#">Jamie Curtis</a>
+                                    <a href="Nurse1.php">Jamie Curtis</a>
                                 </h4>
                                 <h5>Wayne State University</h5>
                                 <p class="card-text">Specialty in elderly care</p>

@@ -129,10 +129,10 @@
 
                     <div class="col-lg-4 col-md-6 mb-4">
                         <div class="card h-100">
-                            <a href="#"><img class="card-img-top" src="Nurse2.jpg" alt=""></a>
+                            <a href="Nurse2.php"><img class="card-img-top" src="Nurse2.jpg" alt=""></a>
                             <div class="card-body">
                                 <h4 class="card-title">
-                                    <a href="#">Taylor Sanchez</a>
+                                    <a href="Nurse2.php">Taylor Sanchez</a>
                                 </h4>
                                 <h5>Oakland University</h5>
                                 <p class="card-text">Specialty in special needs care</p>
@@ -145,10 +145,10 @@
 
                     <div class="col-lg-4 col-md-6 mb-4">
                         <div class="card h-100">
-                            <a href="#"><img class="card-img-top" src="Nurse1.jpg" alt=""></a>
+                            <a href="Nurse1.php"><img class="card-img-top" src="Nurse1.jpg" alt=""></a>
                             <div class="card-body">
                                 <h4 class="card-title">
-                                    <a href="#">Jamie Curtis</a>
+                                    <a href="Nurse1.php">Jamie Curtis</a>
                                 </h4>
                                 <h5>Wayne State University</h5>
                                 <p class="card-text">Specialty in elderly care</p>
@@ -161,10 +161,10 @@
 
                     <div class="col-lg-4 col-md-6 mb-4">
                         <div class="card h-100">
-                            <a href="#"><img class="card-img-top" src="Nurse3.jpg" alt=""></a>
+                            <a href="Nurse3.php"><img class="card-img-top" src="Nurse3.jpg" alt=""></a>
                             <div class="card-body">
                                 <h4 class="card-title">
-                                    <a href="#">Alfred James</a>
+                                    <a href="Nurse3.php">Alfred James</a>
                                 </h4>
                                 <h5>Oakland University</h5>
                                 <p class="card-text">Specialty in pediatrics care</p>
