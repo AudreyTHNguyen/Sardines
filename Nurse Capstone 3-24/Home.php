@@ -28,7 +28,11 @@
 
 </head>
 
-<body>
+<body style="background: url('henry.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;">
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
@@ -77,41 +81,51 @@
 
     <!-- /.col-lg-3 -->
 
-    <header class="py-5 bg-image-full" style="background-image: url('henry.jpg');">
-        <img class="img-fluid d-block mx-auto" src="Nurse1.jpg" alt="" style="height: 350px">
+    <br>
+    <br>
 
-    </header>
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <h1>Welcome To Nurses On The Go!</h1>
+                <img class="img-fluid d-block mx-auto" src="Nurse1.jpg" alt="" style="height: 350px">
+            </div>
+        </div>
+    </div>
 
     <!-- Content section -->
     <section class="py-5">
         <div class="container">
-            <h1>Welcome To Nurses On The GO!</h1>
-            <p class="lead">About us </p>
-            <p>Hello, here Nurses On the Go we have a great selection of nurses for your home health needs. They special in large amount of fields such as elderly care, special needs, injuries, and etc. If you find a nurse that you like or need please feel free to contact us. We will keep your loved one's safe and give you a clear mind that they are being taking care of in the best possible way!</p>
+            <div class="card h-100">
+                <div class="card-body">
+                    <p class="lead">About Us </p>
+                    <p>Nurses On the Go is a service that brings a great selection of nurses to you for your home health needs. They specialize in a variety of fields such as elderly care, special needs, injuries, and more. If you find a nurse that you like or need please feel free to contact us. We will keep your loved one's safe and bring you a peace of mind that they are being cared of in the best possible way!</p>
+                </div>
+            </div>
+
+            <br>
+            <br>
+
+            <div class="card h-100">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <img class="mx-auto" width="100%" src="child.jpg" alt="">
+                    </div>
+                    <div class="card-body" style="padding-left: 2%">
+                        <h1>Follow Us</h1>
+                        <ol>
+
+                            <ul><a href="#" title="Facebook"> Facebook </a></ul>
+                            <ul><a href="#" title="Instagram"> Instagram </a></ul>
+                            <ul><a href="#" title="Twitter"> Twitter </a></ul>
+
+
+                        </ol>
+                    </div>
+                </div>
+            </div>
         </div>
-    </section>
 
-    <!-- Image Section - set the background image for the header in the line below -->
-    <section class="py-5 bg-image-full" style="background-image: url('child.jpg');">
-        <!-- Put anything you want here! There is just a spacer below for demo purposes! -->
-        <div style="height: 400px;"></div>
-    </section>
-
-    <!-- Content section -->
-    <section class="py-5">
-        <div class="container">
-            <h1>Follow Us</h1>
-            <!--        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>-->
-            <!--        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, suscipit, rerum quos facilis repellat architecto commodi officia atque nemo facere eum non illo voluptatem quae delectus odit vel itaque amet.</p>-->
-            <ol>
-
-                <ul><a href="https://www.facebook.com/braylen.lucas" title="Facebook"> Facebook </a></ul>
-                <ul><a href="https://www.instagram.com/realdonaldtrump/?hl=en" title="Instagram"> Instagram </a></ul>
-                <ul><a href="https://twitter.com/realDonaldTrump?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" title="Twitter"> Twitter </a></ul>
-
-
-            </ol>
-        </div>
     </section>
 
 
