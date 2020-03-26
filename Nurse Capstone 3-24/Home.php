@@ -60,8 +60,8 @@
                         <a class="nav-link" href="contact.php">Contact</a>
                     </li>
                     <li class="nav-item">
+                        <?php  if (isset($_SESSION['username'])) : ?>
                         <a class="nav-link">
-                            <?php  if (isset($_SESSION['username'])) : ?>
                             Welcome <strong>
                                 <?php echo $_SESSION['username']; ?></strong>
                         </a>
@@ -82,51 +82,53 @@
     <!-- /.col-lg-3 -->
 
     <br>
-    <br>
 
     <div class="container">
         <div class="card">
             <div class="card-body">
-                <h1>Welcome To Nurses On The Go!</h1>
-                <img class="img-fluid d-block mx-auto" src="Nurse1.jpg" alt="" style="height: 350px">
+                <h1 style="text-align: center">Welcome To Nurses On The Go!</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="card-body">
+                        <p class="lead">About Us </p>
+                        <p>Nurses On the Go is a service that brings a great selection of nurses to you for your home health needs. They specialize in a variety of fields such as elderly care, special needs, injuries, and more. If you find a nurse that you like or need please feel free to contact us. We will keep your loved one's safe and bring you a peace of mind that they are being cared of in the best possible way!</p>
+
+                        <strong>
+                            <p class="mx-auto" style="text-align: center; font-size: x-large"><a href="register.php">Sign Up Now!</a></p>
+                        </strong>
+                    </div>
+                </div>
+                <div class="card-body">
+
+                    <img class="img-fluid d-block mx-auto" src="Nurse1.jpg" alt="" style="height: 350px">
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="card">
+            <div class="row">
+                <div class="col-lg-5">
+                    <img class="mx-auto" width="100%" src="child.jpg" alt="">
+                </div>
+                <div class="card-body" style="padding-left: 10%">
+                    <h1>Follow Us</h1>
+
+
+                    <p><a href="#" title="Facebook"> Facebook </a></p>
+                    <p><a href="#" title="Instagram"> Instagram </a></p>
+                    <p><a href="#" title="Twitter"> Twitter </a></p>
+
+
+
+                </div>
             </div>
         </div>
     </div>
 
-    <!-- Content section -->
-    <section class="py-5">
-        <div class="container">
-            <div class="card h-100">
-                <div class="card-body">
-                    <p class="lead">About Us </p>
-                    <p>Nurses On the Go is a service that brings a great selection of nurses to you for your home health needs. They specialize in a variety of fields such as elderly care, special needs, injuries, and more. If you find a nurse that you like or need please feel free to contact us. We will keep your loved one's safe and bring you a peace of mind that they are being cared of in the best possible way!</p>
-                </div>
-            </div>
-
-            <br>
-            <br>
-
-            <div class="card h-100">
-                <div class="row">
-                    <div class="col-lg-5">
-                        <img class="mx-auto" width="100%" src="child.jpg" alt="">
-                    </div>
-                    <div class="card-body" style="padding-left: 2%">
-                        <h1>Follow Us</h1>
-                        <ol>
-
-                            <ul><a href="#" title="Facebook"> Facebook </a></ul>
-                            <ul><a href="#" title="Instagram"> Instagram </a></ul>
-                            <ul><a href="#" title="Twitter"> Twitter </a></ul>
-
-
-                        </ol>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </section>
+    <br>
 
 
     <!-- Footer -->

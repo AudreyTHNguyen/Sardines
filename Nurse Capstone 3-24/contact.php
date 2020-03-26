@@ -58,8 +58,8 @@
                         </a>
                     </li>
                     <li class="nav-item">
+                        <?php  if (isset($_SESSION['username'])) : ?>
                         <a class="nav-link">
-                            <?php  if (isset($_SESSION['username'])) : ?>
                             Welcome <strong>
                                 <?php echo $_SESSION['username']; ?></strong>
                         </a>
