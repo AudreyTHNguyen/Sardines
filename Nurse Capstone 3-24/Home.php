@@ -32,7 +32,9 @@
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
-  -o-background-size: cover;">
+  -o-background-size: cover; display: flex;
+  min-height: 100vh;
+  flex-direction: column;">
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
@@ -81,9 +83,9 @@
 
     <!-- /.col-lg-3 -->
 
-    <br>
 
-    <div class="container" style="height: 90vh">
+    <div class="container" style="flex: 1;">
+        <br>
         <div class="card">
             <div class="card-body">
                 <h1 style="text-align: center">Welcome To Nurses On The Go!</h1>
@@ -126,9 +128,8 @@
                 </div>
             </div>
         </div>
+        <br>
     </div>
-
-    <br>
 
 
     <!-- Footer -->
