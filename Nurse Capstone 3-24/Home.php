@@ -83,7 +83,7 @@
 
     <br>
 
-    <div class="container">
+    <div class="container" style="height: 90vh">
         <div class="card">
             <div class="card-body">
                 <h1 style="text-align: center">Welcome To Nurses On The Go!</h1>
