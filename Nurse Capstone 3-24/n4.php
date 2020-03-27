@@ -31,7 +31,9 @@
 
 </head>
 
-<body>
+<body style="display: flex;
+  min-height: 100vh;
+  flex-direction: column;">
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
@@ -79,9 +81,9 @@
 
     <!-- Page Content -->
 
-    <div class="container d-flex h-100" style="height: 80vh">
-        <div class="align-self-center" style="padding: 10%">
-
+    <div class="container d-flex h-100" style="flex: 1">
+        <div class="align-self-center">
+<br>
             <div class="card">
                 <img class="card-img-top" src="n4.jpg" alt="Darlene Castro">
                 <div class="card-body">
@@ -95,6 +97,7 @@
                     <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
                 </div>
             </div>
+            <br>
         </div>
     </div>
 
