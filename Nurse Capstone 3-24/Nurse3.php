@@ -98,18 +98,24 @@
                 </div>
             </div>
             <br>
-            <form action="action_page.php">
-            <label for="fname">First Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            <form action="mail_handler.php" method="post">
+                    <fieldset>
+                        <div><label for="first_name">First Name</label></div>
+                        <input type="text" name="first_name" placeholder="Your name..">
 
-            <label for="lname">Last Name</label>
-            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                        <div><label for="last_name">Last Name</label></div>
+                        <input type="text" name="last_name" placeholder="Your last name..">
 
-            <label for="subject">Subject</label>
-            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                        <div><label for="email">Email</label></div>
+                        <input type="text" name="email" placeholder="Your email..">
+                        <div><label for="message">Questions? </label></div>
+                        <textarea name="message" cols="40" rows="5" placeholder="Your text.."></textarea>
 
-            <input type="submit" value="Submit">
-            </form>
+
+                        <div><input type="submit" name="submit" value="Submit"></div>
+                    </fieldset>
+                </form>
+
         </div>
     </div>
 
