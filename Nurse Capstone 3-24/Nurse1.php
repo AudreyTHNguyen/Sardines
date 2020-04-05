@@ -1,5 +1,8 @@
 <?php 
-  session_start(); 
+    include('server.php');
+    date_default_timezone_set('America/New_York'); 
+
+    session_start(); 
 
   if (!isset($_SESSION['username'])) {
   	$_SESSION['msg'] = "You must log in first";
@@ -10,7 +13,9 @@
   	unset($_SESSION['username']);
   	header("location: login.php");
   }
+
 ?>
+<!DOCTYPE html>
 
 <html lang="en">
 
@@ -28,6 +33,7 @@
 
     <!-- Custom styles for this template -->
     <link href="css/shop-homepage.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
 
 </head>
 
@@ -97,6 +103,35 @@
                     <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
                 </div>
             </div>
+
+            <!-- Comment Submission Form -->
+
+            <br>
+            <div class="card h-100">
+                <div class="card-body">
+                    <form method="post" action="Nurse1.php">
+                        <?php include('errors.php'); ?>
+                        <!-- PAGEID MUST BE HARDCODED -->
+                        <input type="hidden" name="pageID" value="Nurse1.php">
+                        <textarea name="message"></textarea>
+                        <br> <br>
+                        <button name="commentSubmit" type="submit">Comment</button>
+                    </form>
+                    <br>
+
+                    <!-- List of Comments -->
+
+                    <?php
+                        listComments('Nurse1.php') //VARIABLE MUST BE SAME AS pageID
+                    ?>
+
+
+
+                </div>
+            </div>
+
+            <!-- End of Content -->
+
             <br>
         </div>
     </div>

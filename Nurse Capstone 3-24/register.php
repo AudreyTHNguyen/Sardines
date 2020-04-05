@@ -39,14 +39,14 @@
                     <li class="nav-item active">
                         <?php  if (!isset($_SESSION['username'])) : ?>
                         <a class="nav-link" href="login.php">Log In
-                        <?php endif ?><span class="sr-only">(current)</span> </a>
+                            <?php endif ?><span class="sr-only">(current)</span> </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contact.php">Contact</a>
                     </li>
                     <li class="nav-item">
+                        <?php  if (isset($_SESSION['username'])) : ?>
                         <a class="nav-link">
-                            <?php  if (isset($_SESSION['username'])) : ?>
                             Welcome <strong>
                                 <?php echo $_SESSION['username']; ?></strong></a>
 
@@ -89,6 +89,15 @@
                         <label>Confirm password</label>
                         <div class="input-group">
                             <input type="password" name="password_2">
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <label>Account Type</label>
+                        <div class="input-group">
+                            <select name="type">
+                                <option value="patient">Patient</option>
+                                <option value="nurse">Nurse</option>
+                            </select>
                         </div>
                     </div>
                     <div class="input-group">

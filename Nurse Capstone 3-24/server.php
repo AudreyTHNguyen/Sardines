@@ -7,7 +7,8 @@ $email    = "";
 $errors = array(); 
 
 // connect to the database
-$db = mysqli_connect('localhost', 'username', 'password', 'databasename');
+
+$db = mysqli_connect('localhost', 'username', 'password', 'dbname');
 
 // REGISTER USER
 if (isset($_POST['reg_user'])) {
@@ -16,6 +17,7 @@ if (isset($_POST['reg_user'])) {
   $email = mysqli_real_escape_string($db, $_POST['email']);
   $password_1 = mysqli_real_escape_string($db, $_POST['password_1']);
   $password_2 = mysqli_real_escape_string($db, $_POST['password_2']);
+  $type = mysqli_real_escape_string($db, $_POST['type']);
 
   // form validation: ensure that the form is correctly filled ...
   // by adding (array_push()) corresponding error unto $errors array
@@ -46,8 +48,8 @@ if (isset($_POST['reg_user'])) {
   if (count($errors) == 0) {
   	$password = md5($password_1);//encrypt the password before saving in the database
 
-  	$query = "INSERT INTO users (username, email, password) 
-  			  VALUES('$username', '$email', '$password')";
+  	$query = "INSERT INTO users (username, email, password, type) 
+  			  VALUES('$username', '$email', '$password', '$type')";
   	mysqli_query($db, $query);
   	$_SESSION['username'] = $username;
   	$_SESSION['success'] = "You are now logged in";
@@ -79,6 +81,41 @@ if (isset($_POST['login_user'])) {
   		array_push($errors, "Wrong username/password combination");
   	}
   }
+}
+
+
+//SUBMIT COMMENT
+if (isset($_POST['commentSubmit'])){
+    $username = mysqli_real_escape_string($db, $_SESSION['username']);
+    $date = mysqli_real_escape_string($db, date('Y-m-d H:i:s'));
+    $message = mysqli_real_escape_string($db, $_POST['message']);
+    $pageID = mysqli_real_escape_string($db, $_POST['pageID']);
+    
+    if (empty($message)) { array_push($errors, "Message is required"); }
+        
+    if (count($errors) == 0) {
+    $query = "INSERT INTO comments (uid, DATE, message, pageID) VALUES('$username', '$date', '$message', '$pageID')";
+        
+    mysqli_query($db, $query);
+    header("location: $pageID");
+    }
+}
+
+//LIST COMMENTS
+function listComments($postID) {
+    global $db;    
+    
+    $sql = "SELECT * FROM comments WHERE pageID = '$postID'";
+    $results = mysqli_query($db, $sql);
+    while ($row = mysqli_fetch_array($results)){
+        echo "<div style='outline: 1px solid lightgray;'><p style='padding: 2%;'>";
+        echo $row['uid']; 
+        echo " ";
+        echo $row['DATE']; 
+        echo " <br>";
+        echo $row['message'];
+        echo "</p></div>";
+    }
 }
 
 ?>

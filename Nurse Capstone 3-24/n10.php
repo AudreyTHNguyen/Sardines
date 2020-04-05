@@ -1,4 +1,7 @@
 <?php 
+    include('server.php');
+    date_default_timezone_set('America/New_York'); 
+
   session_start(); 
 
   if (!isset($_SESSION['username'])) {
@@ -83,7 +86,7 @@
 
     <div class="container d-flex h-100" style="flex: 1">
         <div class="align-self-center">
-<br>
+            <br>
             <div class="card h-100">
                 <img class="mx-auto" width="50%" src="n10.jpg" alt="Jordan Johnston">
                 <div class="card-body">
@@ -97,6 +100,35 @@
                     <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
                 </div>
             </div>
+
+            <!-- Comment Submission Form -->
+
+            <br>
+            <div class="card h-100">
+                <div class="card-body">
+                    <form method="post" action="n10.php">
+                        <?php include('errors.php'); ?>
+                        <!-- PAGEID MUST BE HARDCODED -->
+                        <input type="hidden" name="pageID" value="n10.php">
+                        <textarea name="message"></textarea>
+                        <br> <br>
+                        <button name="commentSubmit" type="submit">Comment</button>
+                    </form>
+                    <br>
+
+                    <!-- List of Comments -->
+
+                    <?php
+                        listComments('n10.php') //VARIABLE MUST BE SAME AS pageID
+                    ?>
+
+
+
+                </div>
+            </div>
+
+            <!-- End of Content -->
+
             <br>
         </div>
     </div>
