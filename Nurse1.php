@@ -90,8 +90,9 @@
     <div class="container d-flex h-100" style="flex: 1">
         <div class="align-self-center">
             <br>
-            <div class="card h-100">
-                <img class="mx-auto" width="50%" src="Nurse1.jpg" alt="Jamie Curtis">
+          <div class="card h-100">
+              <!--  <img class="mx-auto" width="50%" src="Nurse1.jpg" alt="Jamie Curtis">  -->
+              <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="dark" data-vanity="brandon-falk-a8059b183"><a class="LI-simple-link" href='https://www.linkedin.com/in/brandon-falk-a8059b183?trk=profile-badge'>Brandon Falk</a></div>
                 <div class="card-body">
                     <h4 class="card-title">
                         <a href="#">Jamie Curtis</a>
@@ -105,8 +106,7 @@
             </div>
             <br> 
         
-            <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="dark" data-vanity="brandon-falk-a8059b183"><a class="LI-simple-link" href='https://www.linkedin.com/in/brandon-falk-a8059b183?trk=profile-badge'>Brandon Falk</a></div>
-
+            
             <!-- Comment Submission Form -->
 
             <br>
