@@ -18,6 +18,7 @@
 <!DOCTYPE html>
 
 <html lang="en">
+    <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
 
 <head>
 
@@ -91,7 +92,8 @@
         <div class="align-self-center">
             <br>
           <div class="card h-100">
-                <img class="mx-auto" width="50%" src="Nurse1.jpg" alt="Jamie Curtis">
+             <div class="LI-profile-badge"  data-version="v1" data-size="large" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="ryan-medina-545a64157"><a class="LI-simple-link" href='https://www.linkedin.com/in/ryan-medina-545a64157?trk=profile-badge'>Ryan Medina</a></div> 
+              <img class="mx-auto" width="50%" src="Nurse1.jpg" alt="Jamie Curtis">
                 <div class="card-body">
                     <h4 class="card-title">
                         <a href="#">Jamie Curtis</a>
@@ -105,8 +107,7 @@
             </div>
             <br> 
        
-            <div class="LI-profile-badge"  data-version="v1" data-size="large" data-locale="en_US" data-type="vertical" data-theme="dark" data-vanity="tp3208"><a class="LI-simple-link" href='https://www.linkedin.com/in/ryan-medina-545a64157/'>Riley Reid</a></div>
-           
+            
             
             <!-- Comment Submission Form -->
 
