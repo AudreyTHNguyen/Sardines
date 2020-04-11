@@ -50,9 +50,21 @@ if (isset($_POST['reg_user'])) {
 
   	$query = "INSERT INTO users (username, email, password, type) 
   			  VALUES('$username', '$email', '$password', '$type')";
-  	mysqli_query($db, $query);
+  	mysqli_query($db, $query);      
   	$_SESSION['username'] = $username;
   	$_SESSION['success'] = "You are now logged in";
+    
+    /*if ($type === 'nurse') {
+    header('location: n10.php');
+    $query = "SELECT id FROM users WHERE username = '$username'";
+    $result = mysqli_query($db, $query);
+    $row=mysql_fetch_array($result);
+    $uid = $row[0];
+    $query = "INSERT INTO profile (uid, url, name, rating) 
+              VALUES($uid, '$username.php', '$username', 5)";
+    mysqli_query($db, $query);
+    }*/
+    
   	header('location: Home.php');
   }
 }
@@ -115,6 +127,43 @@ function listComments($postID) {
         echo " <br>";
         echo $row['message'];
         echo "</p></div>";
+    }
+}
+
+//LIST PROFILES
+function listProfile($sql) {
+    global $db;
+    
+    $results = mysqli_query($db, $sql);
+    while ($row = mysqli_fetch_array($results)){
+            echo "<div class='col-lg-4 col-md-6 mb-4'>";
+            echo "<div class='card h-100'>";
+                            echo "<a href='";
+                            echo $row['url'];
+                            echo "'>";
+                            echo "<img class='card-img-top' src='";
+                            echo $row['image'];
+                            echo "' alt=''> </a>";
+                            echo "<div class='card-body'> <h4 class='card-title'> <a href='";
+                            echo $row['url'];
+                            echo "'>";
+                            echo $row['name'];
+                            echo "</a></h4><h5>";
+                            echo $row['university'];
+                            echo "</h5>";
+                            echo "<p class='card-text'>";
+                            echo $row['specialty'];
+                            echo "</p></div>";
+                            echo "<div class='card-footer'><small class='text-muted'>";
+                            $star = $row['rating'];    
+                            while ($star > 0){
+                                echo "&#9733;";
+                                $star = $star - 1;
+                                }
+                                echo "</small>";
+                echo"</div>";
+            echo "</div>";
+        echo "</div>";
     }
 }
 

@@ -1,4 +1,5 @@
 <?php 
+  include('server.php');
   session_start(); 
 
   if (!isset($_SESSION['username'])) {
@@ -127,7 +128,11 @@
 
                 <div class="row">
 
-                    <div class="col-lg-4 col-md-6 mb-4">
+                    <?php
+                    listProfile('SELECT * FROM profile');
+                        ?>
+
+                    <!-- <div class="col-lg-4 col-md-6 mb-4">
                         <div class="card h-100">
                             <a href="Nurse2.php"><img class="card-img-top" src="Nurse2.jpg" alt=""></a>
                             <div class="card-body">
@@ -311,7 +316,7 @@
                                 <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9733;</small>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
                 </div>
                 <!-- /.row -->
