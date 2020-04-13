@@ -61,6 +61,11 @@
                         </a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="insuarance.php">Services
+
+                        </a>
+                    </li>
+                    <li class="nav-item">
                         <?php  if (!isset($_SESSION['username'])) : ?>
                         <a class="nav-link" href="login.php">Log In</a>
                         <?php endif ?>
@@ -91,6 +96,7 @@
         <div class="align-self-center">
             <br>
             <div class="card h-100">
+                <div class="LI-profile-badge align-self-center" data-version="v1" data-size="large" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="ryan-medina-545a64157"><a class="LI-simple-link" href='https://www.linkedin.com/in/ryan-medina-545a64157?trk=profile-badge'>Ryan Medina</a></div>
                 <img class="mx-auto" width="50%" src="Nurse1.jpg" alt="Jamie Curtis">
                 <div class="card-body">
                     <h4 class="card-title">
@@ -144,6 +150,7 @@
         <!-- /.container -->
     </footer>
 
+    <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

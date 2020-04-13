@@ -52,6 +52,11 @@
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="insuarance.php">Services
+
+                        </a>
+                    </li>
                     <li class="nav-item">
                         <?php  if (!isset($_SESSION['username'])) : ?>
                         <a class="nav-link" href="login.php">Log In</a>
