@@ -13,6 +13,7 @@
   }
 
     $sql = 'SELECT * FROM profile';
+    $location = "oakland";
 ?>
 
 <html lang="en">
@@ -92,18 +93,18 @@
 
             <div class="col-lg-3">
 
-                <h1 class="my-4">Locations</h1>
-                <div class="list-group">
-                    <a href="menu.php" class="list-group-item">Show All Locations</a>
-                    <a href="oakland.php" class="list-group-item">Oakland County</a>
-                    <a href="wayne.php" class="list-group-item">Wayne County</a>
-                    <a href="macomb.php" class="list-group-item">Macomb County</a>
-                    <a href="lapeer.php" class="list-group-item">Lapeer County</a>
-                </div>
-
                 <br>
-                <h3>Sort By</h3>
+                <h1>Filter By</h1>
                 <form action="#" method="post">
+                    <h3>Location</h3>
+                    <select id="location" name="location">
+                        <option value="oakland' OR `location` = 'macomb' OR `location` = 'wayne' OR `location` = 'lapeer">ALL</option>
+                        <option value='oakland'>Oakland</option>
+                        <option value='wayne'>Wayne</option>
+                        <option value='macomb'>Macomb</option>
+                        <option value='lapeer'>Lapeer</option>
+                    </select>
+                    <h3>Experience</h3>
                     <select id="experience" name="experience">
                         <option value='ASC'>Sort Experience from Low to High</option>
                         <option value='DESC'>Sort Experience from High to Low</option>
@@ -112,8 +113,11 @@
                 </form>
                 <?php 
                 if(isset($_POST['submit'])){
-                if ($_POST['experience']=='ASC' ) { $sql='SELECT * FROM `profile` ORDER BY `profile`.`experience` ASC ' ; }
-                if ($_POST['experience']=='DESC' ) { $sql='SELECT * FROM `profile` ORDER BY  `profile`.`experience` DESC ' ;}}
+                
+                $location = $_POST['location'];
+                
+                if ($_POST['experience']=='ASC' ) { $sql="SELECT * FROM `profile` WHERE `location` = '$location' ORDER BY `profile`.`experience` ASC  " ; }
+                if ($_POST['experience']=='DESC' ) { $sql="SELECT * FROM `profile` WHERE `location` = '$location' ORDER BY  `profile`.`experience` DESC" ;}}
                 ?>
 
             </div>
