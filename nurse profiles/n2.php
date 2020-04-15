@@ -143,6 +143,7 @@
             <br>
             <div class="card h-100">
                 <div class="card-body">
+                    <h1 class="my-4">Comments</h1>
                     <form method="post" action="n2.php">
                         <?php include('errors.php'); ?>
                         <!-- PAGEID MUST BE HARDCODED -->
