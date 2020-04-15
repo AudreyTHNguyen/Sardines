@@ -108,7 +108,7 @@
             </div>
             
             
-          <div class="container" style="height: 80vh">
+  <br>
                                    <div class="card" h-"100">
 <div class="card-body">
 
@@ -136,10 +136,7 @@
             </div>
 </div>    
 </div>
-</div>
 
-
-    </div>
 
            <!-- Comment Submission Form -->
 
