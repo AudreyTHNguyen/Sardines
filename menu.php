@@ -14,6 +14,7 @@
 
     $sql = 'SELECT * FROM profile';
     $location = "oakland";
+    $specialty = "Specialty in elderly care";
 ?>
 
 <html lang="en">
@@ -125,6 +126,7 @@
                 if(isset($_POST['submit'])){
                 
                 $location = $_POST['location'];
+                $specialty = $_POST['specialty'];
                 
                 if ($_POST['experience']=='ASC' ) { $sql="SELECT * FROM `profile` WHERE `location` = '$location' ORDER BY `profile`.`experience` ASC  " ; }
                 if ($_POST['experience']=='DESC' ) { $sql="SELECT * FROM `profile` WHERE `location` = '$location' ORDER BY  `profile`.`experience` DESC" ;}}
