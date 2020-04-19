@@ -128,8 +128,8 @@
                 $location = $_POST['location'];
                 $specialty = $_POST['specialty'];
                 
-                if ($_POST['experience']=='ASC' ) { $sql="SELECT * FROM `profile` WHERE `location` = '$location' ORDER BY `profile`.`experience` ASC  " ; }
-                if ($_POST['experience']=='DESC' ) { $sql="SELECT * FROM `profile` WHERE `location` = '$location' ORDER BY  `profile`.`experience` DESC" ;}}
+                if ($_POST['experience']=='ASC' ) { $sql="SELECT * FROM `profile` WHERE `location` = '$location' ORDER BY `profile`.`experience` ASC  " ; } { $sql="SELECT * FROM `profile` WHERE `specialty` = '$specialty' ORDER BY `profile`.`experience` ASC  " ; }
+                if ($_POST['experience']=='DESC' ) { $sql="SELECT * FROM `profile` WHERE `location` = '$location' ORDER BY  `profile`.`experience` DESC" ;} { $sql="SELECT * FROM `profile` WHERE `specialty` = '$specialty' ORDER BY  `profile`.`experience` DESC" ;}}
                 ?>
 
             </div>
