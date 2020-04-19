@@ -14,7 +14,7 @@
 
     $sql = 'SELECT * FROM profile';
     $location = "oakland";
-    $specialty = "Specialty in elderly care";
+    $specialty= "string";
 ?>
 
 <html lang="en">
@@ -105,7 +105,7 @@
                         <option value='macomb'>Macomb</option>
                         <option value='lapeer'>Lapeer</option>
                     </select>
-                      <h3>Nurse Type</h3>
+                    <h3>Nurse Type</h3>
                     <select id="specialty" name="specialty">
                         <option value="Specialty in elderly care' OR `specialty` = 'Specialty in special needs care' OR `specialty` = 'Specialty in pediatrics care' OR `specialty` = 'Specialty in oncology patients' OR `specialty` = 'Specialty in dementia care' OR `specialty` = 'Bilingual in Spanish">ALL</option>
                         <option value='Specialty in elderly care'>Elderly Care</option>
@@ -128,8 +128,8 @@
                 $location = $_POST['location'];
                 $specialty = $_POST['specialty'];
                 
-                if ($_POST['experience']=='ASC' ) { $sql="SELECT * FROM `profile` WHERE `location` = '$location' ORDER BY `profile`.`experience` ASC  " ; } { $sql="SELECT * FROM `profile` WHERE `specialty` = '$specialty' ORDER BY `profile`.`experience` ASC  " ; }
-                if ($_POST['experience']=='DESC' ) { $sql="SELECT * FROM `profile` WHERE `location` = '$location' ORDER BY  `profile`.`experience` DESC" ;} { $sql="SELECT * FROM `profile` WHERE `specialty` = '$specialty' ORDER BY  `profile`.`experience` DESC" ;}}
+                if ($_POST['experience']=='ASC' ) { $sql="SELECT * FROM `profile` WHERE `location` = '$location' AND `specialty` = '$specialty' ORDER BY `profile`.`experience` ASC  " ; }
+                if ($_POST['experience']=='DESC' ) { $sql="SELECT * FROM `profile` WHERE `location` = '$location' AND `specialty` = '$specialty' ORDER BY  `profile`.`experience` DESC" ;}}
                 ?>
 
             </div>
